@@ -3,7 +3,7 @@ import java.util.*;
     public class MrBot {
         public static void main(String[] args){
 
-                Scanner myObj = new Scanner(System.in) {
+                Scanner myObj = new Scanner(System.in) { //figure out why error "an anonymous class cannot subclass the final class Scanner"
                 String message = myObj.nextLine();
                 String[] str = { "good morning", "morning", "good morning, how are you?", "hey hru", "go back to sleep" };
                 Random r = new Random(); {
