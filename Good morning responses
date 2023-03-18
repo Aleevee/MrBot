@@ -1,17 +1,19 @@
 import java.util.*;
 
-    public class MrBot {
-        public static void main(String[] args){
+     class Main {
+        public static void main(String[] args) {
 
-                Scanner myObj = new Scanner(System.in) { //figure out why error "an anonymous class cannot subclass the final class Scanner"
+            try (Scanner myObj = new Scanner(System.in)) {
                 String message = myObj.nextLine();
-                String[] str = { "good morning", "morning", "good morning, how are you?", "hey hru", "go back to sleep" };
-                Random r = new Random(); {
+                System.out.println("send a message");
+                String[] str = { "good morning", "gm", "morning", "hey, hru", "go back to bed" };
+                Random r = new Random();
+
                     if (message == "good morning") {
-                        System.out.println(str[r.nextInt()]);
+                        System.out.println(str[r.nextInt(5)]);
                     }
             }
-        }; {
-                }
-    }
-}
+        }
+
+
+        }
