@@ -1,0 +1,29 @@
+import java.util.*;
+
+    public class Main {
+        public static void main(String[] args) {
+
+            Scanner myObj = new Scanner(System.in);
+            System.out.println("enter a message");
+            String newMessage = myObj.nextLine();
+
+            String messageRock = "rock";
+            String[] messageRock2 = new String[]{"rock"};
+            String messageRock3 = "Rock";
+            String messagePaper = "paper";
+            String messagePaper2 = "Paper";
+            String messageScissors = "scissors";
+            String messageScissors2 = "Scissors";
+            String[] output = new String[]{"rock", "paper", "scissors"};
+            Random random = new Random();
+
+            switch (newMessage) {
+                case "rock", "Rock", "paper", "Paper", "scissors", "Scissors" -> {
+                    System.out.println(output[random.nextInt(3)]);
+
+                    if (newMessage.equals(messageRock) && output.equals(messageRock)); //expression always equals false, trying to fix it
+                    System.out.println("It's a tie!"); //prints anyways, need to figure out how to make it only print if the expression is true
+               }
+            }
+         }
+      }
