@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class eightBall {
+
+    public String main;
+
+    public static void main(String[] args) {
+
+        Random random = newRandom();
+        assert random != null;
+        random.nextInt(20);
+
+        String[] output = new String[]{"it is certain", "it is decidedly so", "without a doubt", "yes definitely", "you may rely on it", "as i see it, yes", "most likely", "outlook good", "yes", "signs point to yes", "reply hazy, try again", "ask again later", "better not tell you now", "cannot predict now", "concentrate and ask again", "don't count on it", "no", "my sources say no", "outlook not so good", "doubtful"};
+
+        System.out.println("What is your question");
+
+        System.out.println(output[random.nextInt(20)]);
+    }
+
+    private static Random newRandom() {
+        return null;
+    }
+
+}
+
