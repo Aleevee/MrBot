@@ -1,18 +1,39 @@
 import java.util.*;
 
-public class eightBall {
+public class rockPaperScissors {
+    public Object main;
 
-    public String main;
     public static void main(String[] args) {
 
+        Scanner myObj = new Scanner(System.in);
+        System.out.println("enter a message");
+        String newMessage = myObj.nextLine();
+
+        String messageRock = "rock" ;
+        String messagePaper = "paper";
+        String messageScissors = "scissors";
+        String[] output = new String[]{"rock", "paper", "scissors"};
         Random random = new Random();
 
-        String[] output = new String[]{"it is certain", "it is decidedly so", "without a doubt", "yes definitely", "you may rely on it", "as i see it, yes", "most likely", "outlook good", "yes", "signs point to yes", "reply hazy, try again", "ask again later", "better not tell you now", "cannot predict now", "concentrate and ask again", "don't count on it", "no", "my sources say no", "outlook not so good", "doubtful"};
+        switch (newMessage) {
+            case "rock", "Rock", "Paper", "Scissors",  "paper", "scissors" -> {
+                System.out.println(output[random.nextInt(3)]);
 
-        System.out.println("What is your question");
+                if (newMessage.equals(messageRock) && output[random.nextInt(3)].equals(messageRock)) {
+                    System.out.println("It's a tie!");
 
-        System.out.println(output[random.nextInt(20)]);
+                } else if (newMessage.equals(messagePaper) && output[random.nextInt(3)].equals(messagePaper)) {
+                    System.out.println("It's a tie!");
+
+                } else if (newMessage.equals(messageScissors) && output[random.nextInt(3)].equals(messageScissors)) {
+                    System.out.println("It's a tie!");
+
+                }
+
+
+            }
+        }
     }
-
-
 }
+
+
