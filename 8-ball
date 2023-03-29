@@ -1,18 +1,79 @@
-import java.util.*;
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+import java.util.Random;
 
 public class eightBall {
-
-    public String main;
-    public static void main(String[] args) {
-
-        Random random = new Random();
-
-        String[] output = new String[]{"it is certain", "it is decidedly so", "without a doubt", "yes definitely", "you may rely on it", "as i see it, yes", "most likely", "outlook good", "yes", "signs point to yes", "reply hazy, try again", "ask again later", "better not tell you now", "cannot predict now", "concentrate and ask again", "don't count on it", "no", "my sources say no", "outlook not so good", "doubtful"};
-
-        System.out.println("What is your question");
-
-        System.out.println(output[random.nextInt(20)]);
+    public eightBall() {
     }
 
+    public static void myMethod() {
+        Scanner scan = new Scanner(System.in);
+        Random random = new Random();
+        int responses = random.nextInt(20) + 1;
+        switch (responses) {
+            case 1:
+                System.out.println("It is certain");
+                break;
+            case 2:
+                System.out.println("It is decidedly so");
+                break;
+            case 3:
+                System.out.println("Without a doubt");
+                break;
+            case 4:
+                System.out.println("Yes, definitely");
+                break;
+            case 5:
+                System.out.println("You may rely on it");
+                break;
+            case 6:
+                System.out.println("As i see it, yes");
+                break;
+            case 7:
+                System.out.println("Most likely");
+                break;
+            case 8:
+                System.out.println("Outlook good");
+                break;
+            case 9:
+                System.out.println("Yes");
+                break;
+            case 10:
+                System.out.println("Signs point to yes");
+                break;
+            case 11:
+                System.out.println("Reply hazy, try again");
+                break;
+            case 12:
+                System.out.println("Ask again later");
+                break;
+            case 13:
+                System.out.println("Better not tell you now");
+                break;
+            case 14:
+                System.out.println("Cannot predict now");
+                break;
+            case 15:
+                System.out.println("Concentrate and ask again");
+                break;
+            case 16:
+                System.out.println("Don't count on it");
+                break;
+            case 17:
+                System.out.println("No");
+                break;
+            case 18:
+                System.out.println("Sources point to no");
+                break;
+            case 19:
+                System.out.println("Outlook not so good");
+                break;
+            case 20:
+                System.out.println("Doubtful");
+        }
 
+    }
 }
