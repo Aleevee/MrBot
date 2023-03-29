@@ -1,39 +1,23 @@
-import java.util.*;
+
+import java.util.Random;
 
 public class rockPaperScissors {
-    public Object main;
+    public rockPaperScissors() {
+    }
 
     public static void main(String[] args) {
-
-        Scanner myObj = new Scanner(System.in);
-        System.out.println("enter a message");
-        String newMessage = myObj.nextLine();
-
-        String messageRock = "rock" ;
-        String messagePaper = "paper";
-        String messageScissors = "scissors";
-        String[] output = new String[]{"rock", "paper", "scissors"};
         Random random = new Random();
-
-        switch (newMessage) {
-            case "rock", "Rock", "Paper", "Scissors",  "paper", "scissors" -> {
-                System.out.println(output[random.nextInt(3)]);
-
-                if (newMessage.equals(messageRock) && output[random.nextInt(3)].equals(messageRock)) {
-                    System.out.println("It's a tie!");
-
-                } else if (newMessage.equals(messagePaper) && output[random.nextInt(3)].equals(messagePaper)) {
-                    System.out.println("It's a tie!");
-
-                } else if (newMessage.equals(messageScissors) && output[random.nextInt(3)].equals(messageScissors)) {
-                    System.out.println("It's a tie!");
-
-                }
-
-
-            }
+        int responses = random.nextInt(3) + 1;
+        switch (responses) {
+            case 1:
+                System.out.println("rock");
+                break;
+            case 2:
+                System.out.println("paper");
+                break;
+            case 3:
+                System.out.println("scissors");
         }
+
     }
 }
-
-
