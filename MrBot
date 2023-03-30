@@ -21,6 +21,7 @@ import java.util.*;
                     }
                     case "8-ball", "8-Ball" -> {
                         System.out.println("What is your question");
+                        String inquiry = scan.nextLine();
                         int responses = random.nextInt(20) + 1;
                         switch (responses) {
                             case 1 -> System.out.println("It is certain");
