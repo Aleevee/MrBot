@@ -11,7 +11,7 @@ import java.util.*;
                 switch (functionName)  {
                     case "help", "Help" -> System.out.println("Commands include: \"rock, paper, scissors\", 8-ball, and calculator");
                     case "rock, paper, scissors", "Rock, Paper, Scissors" -> {
-
+                        String inquiry = scan.nextLine();
                         int responses = random.nextInt(3) + 1;
                         switch (responses) {
                             case 1 -> System.out.println("rock");
