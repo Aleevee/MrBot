@@ -1,0 +1,29 @@
+import java.util.*;
+
+    public class MrBot {
+        public static void main(String[] args) {
+
+            Scanner scan = new Scanner(System.in);
+            String firstMessage = scan.nextLine();
+
+            switch (firstMessage) {
+                case "good morning", "Good morning", "Good Morning", "Hello", "Hi", "hello", "hi", "Hello?", "Hi?", "hello?", "hi?", "hey", "hey!", "hey?", "Hey", "Hey!", "Hey?", "morning", "Morning", "Hi there", "hi there" -> {
+                    Random random = new Random();
+                    int newGoodMorning = random.nextInt(10) + 1;
+                    switch (newGoodMorning) {
+                        case 1-> System.out.println("Good morning!");
+                        case 2 -> System.out.println("Hi!");
+                        case 3 -> System.out.println("Hello there!");
+                        case 4 ->System.out.println("Hi! How are you today?");
+                        case 5 ->System.out.println("Hello, hru?");
+                        case 6 ->System.out.println("Hey! Nice to see you again, how've you been?");
+                        case 7 ->System.out.println("Nice to see you!");
+                        case 8 ->System.out.println("Go away");
+                        case 9 ->System.out.println("Haiiiiiiiiii! :3");
+                        case 10 ->System.out.println("OMG! Hi!");
+
+                    }
+                }  case "good afternoon", "Good afternoon" -> System.out.println("Good afternoon");
+                case "good evening", "Good evening" -> System.out.println("Good evening");
+                case "Im tired", "Im going to bed", "gn", "GN", "Im gonna go to bed" -> System.out.println("Goodnight!");
+            }
